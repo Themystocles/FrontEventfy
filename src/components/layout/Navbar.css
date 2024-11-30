@@ -1,0 +1,57 @@
+.navbar {
+    position: fixed;
+    /* Fixado no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    /* Define a altura fixa */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #f9f9f9;
+    /* Cor de fundo mais suave */
+    color: #333;
+    /* Cor do texto mais escura */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma leve sombra */
+    z-index: 1000;
+    /* Garante que o Navbar fique acima do conteúdo */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    /* Cor da logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links .nav-link {
+    color: #555;
+    /* Cor mais suave para os links */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Adiciona uma transição */
+}
+
+.nav-links .nav-link:hover {
+    color: #00d1b2;
+    /* Cor de hover mais discreta */
+    transform: translateY(-2px);
+    /* Efeito de movimento */
+}
+
+.nav-links .nav-link:focus {
+    outline: none;
+    border-bottom: 2px solid #00d1b2;
+    /* Indicação visual no foco */
+}

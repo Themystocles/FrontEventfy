@@ -1,7 +1,6 @@
 
-function Container(props) {
+export function Container(props) {
     return (
         <></>
     )
 }
-export default Container

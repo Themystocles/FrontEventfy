@@ -1,9 +1,13 @@
+import './Home.css'
+
 function Home() {
 
     return (
-        <>
-            <p> Conteúdo da Home</p>
-        </>
+        <section className="home-section">
+            <h1>Bem vindo ao <span>Eventfy</span></h1>
+            <a href="event/">Criar um evento</a>
+        </section>
+
     )
 
 }
