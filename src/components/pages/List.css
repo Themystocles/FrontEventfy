@@ -1,0 +1,106 @@
+/* Estilos para o componente List */
+.Lista-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+    /* Altura total menos espaço para navbar e footer */
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #555;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+/* Estilo do título */
+.Lista-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o span dentro do título */
+.Lista-section h1 span {
+    color: #00d1b2;
+    font-weight: bold;
+}
+
+/* Estilo da lista */
+.Lista-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    overflow: hidden;
+}
+
+/* Estilo para cada item da lista */
+.Lista-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover para os itens */
+.Lista-items li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Último item sem borda */
+.Lista-items li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo do texto do item */
+.Lista-items li span {
+    color: #555;
+}
+
+/* Estilo do botão de ação nos itens */
+.Lista-items li button {
+    background-color: #00d1b2;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilo do hover no botão */
+.Lista-items li button:hover {
+    background-color: #00b89c;
+    transform: translateY(-2px);
+}
+
+/* Estilo do link */
+.Lista-section a {
+    background-color: #00d1b2;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Lista-section a:hover {
+    background-color: #00b89c;
+    transform: translateY(-2px);
+}
